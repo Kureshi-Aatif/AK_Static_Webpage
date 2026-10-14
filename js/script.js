@@ -1,5 +1,5 @@
 // ===== EDIT YOUR DETAILS HERE =====
-const C={phone:"917698450003",phoneShow:"+91 76984 50003",email:"AKdigitalstudio.org@gmail.com",insta:"https://instagram.com/ak.digital_studio",
+const C={phone:"917698450003",phoneShow:"+91 76984 50003",email:"AKdigitalstudio.org@gmail.com",insta:"https://instagram.com/ak.digital_studio?xtok=MTl6Y255c2FubTAwOQ%3D%3D",
 greet:"Hi AK Digital Studio, I would like to know more about your services."};
 // ==================================
 const wa=t=>`https://wa.me/${C.phone}?text=${encodeURIComponent(t)}`;
