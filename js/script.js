@@ -16,6 +16,8 @@ const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.f
 document.querySelectorAll('section[id]').forEach(s=>so.observe(s));
 document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('open')));
 const f=document.getElementById('qform');
+if(f){
 const msg=()=>{const d=new FormData(f);return `Hi AK Digital Studio, I'm ${d.get('n')}${d.get('b')?' from '+d.get('b'):''}. I'm interested in: ${d.get('p')}.${d.get('m')?'\n\n'+d.get('m'):''}`};
 f.addEventListener('submit',e=>{e.preventDefault();window.open(wa(msg()),'_blank')});
 document.getElementById('viaMail').onclick=()=>{if(f.reportValidity())location.href=`mailto:${C.email}?subject=${encodeURIComponent('Quote request: '+f.p.value)}&body=${encodeURIComponent(msg())}`};
+}
